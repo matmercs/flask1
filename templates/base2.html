@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+        <title>{{ 'http://127.0.0.1:8080/training/' + prof }}</title>
+    </head>
+    <body>
+        <h1>Миссия Колонизация Марса</h1>
+        <h4>И на Марсе будут яблони цвести!</h4>
+        {% if 'инженер' in prof or 'строитель' in prof %}
+            <img src="/static/img/it.png" alt="Здесь должна была быть картинка, но не нашлась">
+        {% else %}
+            <img src="/static/img/nc.png" alt="Здесь должна была быть картинка, но не нашлась">
+        {% endif %}
+    </body>
+</html>
